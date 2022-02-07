@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lesson 7</title>
+	</head>
+<body>
+	<div class="wrapper">
+<!-- =============HEADER============================================================= -->
+			<div class="header">
+				<div class="header__contain">
+					<div class="header__title">background</div>
+						<div class="block__list">
+							<ul class="nav__list">
+								<li><a href="#1" class="nav__link">Background-color</a></li>
+								<li><a href="#2" class="nav__link">Background-image</a></li>
+								<li><a href="#3" class="nav__link">Background-repeat</a></li>
+								<li><a href="#4" class="nav__link">Background-position</a></li>
+								<li><a href="#5" class="nav__link">Background-attachment</a></li>
+								<li><a href="#6" class="nav__link">Background-size</a></li>
+								<li><a href="#7" class="nav__link">Установка нескольких фоновых изображений для блока</a></li>
+								<div class="line"></div>
+								<li><a href="#8" class="nav__link">Верстаем блок из макета </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+<!--===================== MAIN=========================================================-->
+<!--==BACKGROUND-COLOR================================================================ -->
+	<main>
+		<div id="1" class="container">
+			<div class="content">
+				<div class="background__container ">
+					<div class="background__title">
+						<div class="line_left"></div>
+							<h2>Background-color</h2>
+						<div class="line_right"></div>
+					</div>
+					<div class="background__block column-one">
+						<p>Определяет цвет фона элемента</p>
+						<p>background-color: transparent;</p>
+					</div>
+					<div class="background__block column-two">
+						<p>Определяет цвет фона элемента</p>
+						<p>background-color: #18b5a4;</p>
+					</div>
+					<div class="background__block column-three">
+						<p>Определяет цвет фона элемента</p>
+						<p>background-color: rgb(24,181,164);</p>
+					</div>
+					<div class="background__block column-four">
+						<p>Определяет цвет фона элемента</p>
+						<p>background-color: rgba(24,181,164,0.5);</p>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--==BACKGROUND-IMAGE================================================================ -->
+		<div id="2" class="background__container contain__image">
+			<div class="background__title">
+				<div class="line_left"></div>
+					<h2>Background-image</h2>
+				<div class="line_right"></div>
+			</div>
+			<div class="background__block column-image-zero">
+				<h3><span>Backgroung-image</span> по умолчанию <span>repead</span></h3>
+				<p>Свойство CSS <span>background-image</span> устанавливает одно или несколько фоновых изображений для элемента. Изображения рисуются в слоях контекстов наложения одно поверх другого. Первый слой выводится так, чтобы он был ближе всего к пользователю.</p>
+				<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+			</div>
+			<div class="background__block column-image-one">
+				<h3><span>Backgroung + color + image</span> фон задається кольором та картинкою</h3>
+				<p>Свойство CSS <span>background-image</span> устанавливает одно или несколько фоновых изображений для элемента. Изображения рисуются в слоях контекстов наложения одно поверх другого. Первый слой выводится так, чтобы он был ближе всего к пользователю.</p>
+				<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+			</div>
+			<div class="background__block column-image-two">
+				<h3><span>background: linear-gradient</span> Фон задается линейным градиентом </h3>
+				<p>Свойство CSS <span>background-image</span> устанавливает одно или несколько фоновых изображений для элемента. Изображения рисуются в слоях контекстов наложения одно поверх другого. Первый слой выводится так, чтобы он был ближе всего к пользователю.</p>
+				<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+			</div>
+			<div class="background__block column-image-three">
+				<h3><span>background: linear-gradient</span> Фон задается линейным градиентом</h3>
+				<p>Свойство CSS <span>background-image</span> устанавливает одно или несколько фоновых изображений для элемента. Изображения рисуются в слоях контекстов наложения одно поверх другого. Первый слой выводится так, чтобы он был ближе всего к пользователю.</p>
+				<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+			</div>
+			<div class="background__block column-image-four">
+				<h3><span>background: radial-gradient :</span> Фон задается радиальным градиентом </h3>
+				<p>Свойство CSS <span>background-image</span> устанавливает одно или несколько фоновых изображений для элемента. Изображения рисуются в слоях контекстов наложения одно поверх другого. Первый слой выводится так, чтобы он был ближе всего к пользователю.</p>
+				<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+			</div>
+
+		</div>
+
+<!-- BACKGROUND-REPEAT ================================================================-->
+		<div id="3" class="background__container contain__repeat">
+			<div class="background__container contain__repeat">
+				<div class="background__title">
+					<div class="line_left"></div>
+						<h2>Background-repeat</h2>
+					<div class="line_right"></div>
+				</div>
+				<div class="background__block column-repead-zero">
+					<h3><span>Backgroung-repeat</span> по умолчанию <span>repead</span></h3>
+					<p>Свойство CSS <span>background-repeat</span> Фоновое изоброжение повторяеться по горизонтали и вертикали. Анологачно <span>background: repeat repeat</span></p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+				</div>
+				<div class="background__block column-repead-one">
+					<h3><span>Backgroung-repeat :</span> no repeat</h3>
+					<p>Свойство CSS <span>background-repeat: no-repeat </span>Устанавливает одно фоновое изображение в элемене без его повторения, положение которого опредиляется свойством <span>background-position</span> (по умолчанию в левом верхнем углу) Аналогично<span> no-repeat no repeat</span> </p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+				</div>
+				<div class="background__block column-repead-two">
+					<h3><span>background: repeat-X</span> Фон задается по горизонтали </h3>
+					<p>Свойство CSS <span>background-repeat: repeat-x</span> Фоновое изоброжение повторяеться только по горизонтали. Аналогично <span> background-repeat:repeat no-repeat</span></p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+				</div>
+				<div class="background__block column-repead-three">
+					<h3><span>background-repeat: repeat-Y Фон задается по вертикали</span> </h3>
+					<p>Свойство CSS <span>background-repeat: repeat-Y</span> Фоновое изоброжение повторяеться только по вертикали. Аналогично <span> background-repeat: no-repeat repeat</span></p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+				</div>
+				<div class="background__block column-repead-four">
+					<h3><span>background-repeat: space</span> Фон задается  </h3>
+					<p>Свойство CSS <span>background-repeat: space</span> Изображение повторяется столько раз, чтобы полностью заполнать область. если ето не удается, между картинками добавляется пустое пространство</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+				</div>
+				<div class="background__block column-repead-five">
+					<h3><span>background-repeat: round </span> </h3>
+					<p>Свойство CSS <span>background-repeat: round</span> Изображение повторяется так, чтобы в область поместилось целое число рисунков, если ето не удается сделать то фоновіе рисунки масштабируются</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+					<p>Границы border элемента затем рисуются поверх них, и <span>background-color</span> рисуется под ними. То, как изображения отрисовываются относительно рамки и её границ, определяется CSS-свойствами <span>background-clip</span> и <span>background-origin</span>.</p>
+				</div>
+			</div>
+		</div>
+<!-- BACKGROUND-POSITION ==============================================================-->
+		<div id="4" class="background__container contain__position">
+			<div class="background__title">
+				<div class="line_left"></div>
+					<h2>Background-position</h2>
+				<div class="line_right"></div>
+			</div>
+			<div class="background__block column-position-zero">
+				<h3><span>Backgroung-position</span> по умолчанию <span>top left / 0 0 no-repeat</span></h3>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+			</div>
+			<div class="background__block column-position-one">
+				<h3><span>Backgroung-position</span> 0 50% або left no-repeat </h3>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+			</div>
+			<div class="background__block column-position-two">
+				<h3><span>Backgroung-position</span> 50% або center </h3>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+			</div>
+			<div class="background__block column-position-three">
+				<h3><span>Backgroung-position</span> 100% 100% або bottom right </h3>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+			</div>
+			<div class="background__block column-position-four">
+				<h3><span>Backgroung-position :</span> позиция 190px 50px </h3>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS <span>background-position</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+			</div>
+			<div class="background__block column-position-five">
+				<h3><span>Backgroung-position :</span> ... </h3>
+				<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>		<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>		<p>Свойство CSS  Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+			</div>
+		</div>
+<!-- BACKGROUND-ATTACHMENT ============================================================-->
+		<div id="5" class="background__container contain__attachment">
+			<div class="background__container contain__position">
+				<div class="background__title">
+					<div class="line_left"></div>
+						<h2>Background-attachment</h2>
+					<div class="line_right"></div>
+				</div>
+				<div class="background__block column-attachment-zero">
+					<h3><span>Background-attachment</span> по умолчанию <span>scroll</span></h3>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				</div>
+				<div class="background__block column-attachment-one">
+					<h3><span>Background-attachment: </span> fixed </h3>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				</div>
+				<div class="background__block column-attachment-two">
+					<h3><span>Background-attachment: </span> fixed </h3>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				</div>
+				<div class="background__block column-attachment-three">
+					<h3><span>Background-attachment: </span> local </h3>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+					<p>Свойство CSS <span>Background-attachment</span> Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет расположение по горизонтали, второе - вертикали.</p>
+				</div>
+			</div>
+		</div>
+<!-- BACKGROUND-SIZE ==================================================================-->
+		<div id="6" class="background__container contain__size">
+			<div class="background__container contain__six">
+				<div class="background__title">
+					<div class="line_left"></div>
+						<h2>Background-size</h2>
+					<div class="line_right"></div>
+				</div>
+				<div class="background__block column-size-zero">
+					<h3><span>Backgroung-size</span> по умолчанию <span>0 0 / auto auto no-repeat</span></h3>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по умолчанию</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по умолчанию</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по умолчанию </p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по умолчанию</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по умолчанию</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по умолчанию</p>
+				</div>
+				<div class="background__block column-size-one">
+					<h3><span>Backgroung-size по ширине</span> 0 0 / 100% auto no-repeat </h3>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по ширине блока</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по ширине блока</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по ширине блока</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по ширине блока</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по ширине блока</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по ширине блока</p>
+				</div>
+				<div class="background__block column-size-two">
+					<h3><span>Backgroung-size по висоте </span> 0 0 / auto 100% no-repeat </h3>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по высоте блока</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по высоте блока</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по высоте блока</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по высоте блока</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по высоте блока</p>
+					<p>Свойство CSS <span>background-size</span> Размеры картинки по высоте блока</p>
+				</div>
+				<div class="background__block column-size-three">
+					<h3><span>Backgroung-size</span> 0 0 / 100% 100% no-repat </h3>
+					<p>Свойство CSS <span>background-size</span> Расстягиваем картинку на всю ширину и высоту блока</p>
+					<p>Свойство CSS <span>background-size</span> Расстягиваем картинку на всю ширину и высоту блока</p>
+					<p>Свойство CSS <span>background-size</span> Расстягиваем картинку на всю ширину и высоту блока</p>
+					<p>Свойство CSS <span>background-size</span> Расстягиваем картинку на всю ширину и высоту блока</p>
+					<p>Свойство CSS <span>background-size</span> Расстягиваем картинку на всю ширину и высоту блока</p>
+					<p>Свойство CSS <span>background-size</span> Расстягиваем картинку на всю ширину и высоту блока</p>
+				</div>
+				<div class="background__block column-size-four">
+					<h3><span>Backgroung-size :</span> 0 0 / contain no-repeat </h3>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока. То есть по меньшей стороне картинки</p>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока. То есть по меньшей стороне картинки</p>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока. То есть по меньшей стороне картинки</p>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока. То есть по меньшей стороне картинки</p>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока. То есть по меньшей стороне картинки</p>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока. То есть по меньшей стороне картинки</p>
+				</div>
+				<div class="background__block column-size-five">
+					<h3><span>Backgroung-size :</span> 0 0 / cover no-repeat </h3>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. То есть по большей стороне картинки/p>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. То есть по большей стороне картинки</p>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. То есть по большей стороне картинки</p>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. То есть по большей стороне картинки</p>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. То есть по большей стороне картинки</p>
+					<p>Свойство CSS <span>background-size</span> Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. То есть по большей стороне картинки</p>
+
+				</div>
+				<div class="background__block column-size-six">
+					<h3><span>Backgroung-size :</span> 0 0 / 400px 300px </h3>
+					<p>Свойство CSS <span>background-size</span> Устанавливаем конкретные размеры. Если установлено одно значение, оно задает ширину фона, второе значение принимается за auto. Пропорции картинки при этом сохраняются. Использование двух значений через пробел задает ширину и высоту фоновой картинки</p>
+					<p>Свойство CSS <span>background-size</span> Устанавливаем конкретные размеры. Если установлено одно значение, оно задает ширину фона, второе значение принимается за auto. Пропорции картинки при этом сохраняются. Использование двух значений через пробел задает ширину и высоту фоновой картинки</p>
+					<p>Свойство CSS <span>background-size</span> Устанавливаем конкретные размеры. Если установлено одно значение, оно задает ширину фона, второе значение принимается за auto. Пропорции картинки при этом сохраняются. Использование двух значений через пробел задает ширину и высоту фоновой картинки</p>
+					<p>Свойство CSS <span>background-size</span> Устанавливаем конкретные размеры. Если установлено одно значение, оно задает ширину фона, второе значение принимается за auto. Пропорции картинки при этом сохраняются. Использование двух значений через пробел задает ширину и высоту фоновой картинки</p>
+					<p>Свойство CSS <span>background-size</span> Устанавливаем конкретные размеры. Если установлено одно значение, оно задает ширину фона, второе значение принимается за auto. Пропорции картинки при этом сохраняются. Использование двух значений через пробел задает ширину и высоту фоновой картинки</p>
+					<p>Свойство CSS <span>background-size</span> Устанавливаем конкретные размеры. Если установлено одно значение, оно задает ширину фона, второе значение принимается за auto. Пропорции картинки при этом сохраняются. Использование двух значений через пробел задает ширину и высоту фоновой картинки</p>
+					<p>Свойство CSS <span>background-size</span> Устанавливаем конкретные размеры. Если установлено одно значение, оно задает ширину фона, второе значение принимается за auto. Пропорции картинки при этом сохраняются. Использование двух значений через пробел задает ширину и высоту фоновой картинки</p>
+				</div>
+			</div>
+		</div>
+<!-- ================================================================================= -->
+		<div id="8" class="background__title">
+			<div class="line_left"></div>
+				<h2>Верстаем блок из макета (Car Repair and Doggie)</h2>
+			<div class="line_right"></div>
+		</div>
+		<div class="task">
+			<div class="image__back">
+				<div class="image__back-title">Top notch service is our main auto motive</div>
+				<a class="link-link" href="">Make an Appointment</a>
+			</div>
+		</div>
+<!-- ================================================================================= -->
+		<section class="section-one"> 
+			<div class="our-impact">
+				<div class="block-impact">
+					<div class="subtitle"><h1>OUR IMPACT</h1></div>
+					<div class="title_our-impact">Nemo enim ipsam voluptatem quia voluptas</div>
+				</div>
+				<div class="our-image">
+					<img src="/img/ImageCar.png" alt="">
+				</div>
+					<div class="our-colums colums-one">
+						<div class="title-colums">16k+</div>
+						<div class="subtitle_colums">Oil changes</div>
+					</div>
+					<div class="our-colums colums-two">
+						<div class="title-colums">13k+</div>
+						<div class="subtitle_colums">Transmission repairs</div>
+					</div>
+					<div class="our-colums colums-three">
+						<div class="title-colums">15k+</div>
+						<div class="subtitle_colums">Alignments made</div>
+					</div>
+					<div class="our-colums colums-four">
+						<div class="title-colums">11,500+</div>
+						<div class="subtitle_colums">Engines repaired</div>
+					</div>
+				</div>
+		</section>
+<!-- ================================================================================= -->
+		<section class="section-two">
+			<div class="section-contact">
+				<div class="list-block">
+					<div class="bloc__list">
+						<h4 class="title-contact">contact</h4>
+						<ul class="list">
+							<li class="text text-location">321 Pikes Place Parkway
+								Seattle, WA 54321</li>
+							<li class="text text-phone">(555) 765-4321</li>
+							<li class="text text-mail">Info@company.com</li>
+							<li class="text text-clock">Mon - Sat:  7:00 am - 6:00 pm</li>
+						</ul>
+					</div>
+				</div>
+<!-- ================================================================================= -->
+				<div class="section-contact">
+					<div class="list-block">
+						<p class="title-contact">contact</p>
+						<ul class="list">
+							<li class="text text-location text-location__right __right">
+								<a href="https://www.google.com/maps/place/%D0%A1%D1%96%D0%B5%D1%82%D0%BB,+%D0%92%D0%B0%D1%88%D0%B8%D0%BD%D0%B3%D1%82%D0%BE%D0%BD,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@47.6129432,-122.4821475,11z/data=!3m1!4b1!4m5!3m4!1s0x5490102c93e83355:0x102565466944d59a!8m2!3d47.6062095!4d-122.3320708">321 Pikes Place Parkway
+								Seattle, WA 54321</a></li>
+							<li class="text text-phone text-phone__right __right"><a href="tel:+1555754321">(555) 765-4321</a></li>
+							<li class="text text-mail text--mail__right __right"><a href="Info@company.com">Info@company.com</a></li>
+							<li class="text text-clock text-clock__right __right">Mon - Sat:  7:00 am - 6:00 pm</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- ==================Установка нескольких фоновых изображений для блока============= -->
+		<section id="7" class="position">
+			<div class="position-block">
+				<p>image</p>
+				<p>right</p>
+				<p>image</p>
+				<p>right</p>
+			</div>
+			<div class="position__blosk-two">
+				<div class="position__block-title">Pick meals</div>
+				<div class="position-line"></div>
+				<div class="position__text">
+					Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie options.
+				</div>
+			</div>
+		</section>
+	</main>
+<!-- ================================================================================= -->
+<!-- =============Footer================= -->
+		<footer>
+			<div><p>Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod</p></div>
+			<div><p>© 2022 Company. Privacy Policy | Terms & Condition</p></div>
+		</footer>
+	</div>
+	</body>
+</html>
