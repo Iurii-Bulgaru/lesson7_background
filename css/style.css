@@ -393,8 +393,8 @@ main{
 .our-image {
 	display: inline-block;
 }
-.our-image img {
-	margin-top: -293px;
+div img {
+	margin-top: -290px;
 }
 /*                            */
 .our-colums {
