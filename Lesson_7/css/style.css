@@ -391,15 +391,12 @@ main{
 	color: #ffffff;
 }
 .our-image {
-	/* display: inline-block; */
+	display: inline-block;
 	/* background: url(../img/ImageCar.jpg) 0 0 no-repeat;  */
-	
 }
 div img {
 	display: inline-block;
 	margin-top: -290px;
-	
-	
 }
 /*                            */
 .our-colums {
