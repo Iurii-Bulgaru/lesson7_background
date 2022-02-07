@@ -394,7 +394,7 @@ main{
 	display: inline-block;
 }
 div img {
-	margin-top: -290px;
+	/* margin-top: -290px; */
 }
 /*                            */
 .our-colums {
