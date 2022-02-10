@@ -1,39 +1,8 @@
-/* &display=swap&subset=cyrillic-ext */
-
-/* Підключення шрифтів*/
-
-@import url("https://fonts.googleapis.com/css?family=Be Vietnam Pro:500,500italic,600,700,800,900&display=swap&subset=cyrillic-ext");
-
-@import url("https://fonts.googleapis.com/css?family=Roboto:regular,900&display=swap&subset=cyrillic-ext");
-
-
-
-@font-face {
-	font-family: 'Arial Nova';
-	src: url('../ArialNova-Light.woff2') format('woff2'),
-	    url('../ArialNova-Light.woff') format('woff');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
- }
- 
- @font-face {
-	font-family: 'Arial Nova';
-	src: url('../ArialNova-Bold.woff2') format('woff2'),
-	    url('../ArialNova-Bold.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
- }
- 
- @font-face {
-	font-family: 'Arial Nova';
-	src: url('../ArialNova.woff2') format('woff2'),
-	    url('../ArialNova.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
- }
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
 
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
@@ -69,523 +38,151 @@ img {
 html,
 body {
 	height: 100%;
-	width: 100%;
-	line-height: 1px;
 }
 html {
 	font-size: 16px; /* по умолчанию */
 }
 body {
-	font-family: "Arial";
 	line-height: 1;
+	font-family: "Roboto";
+	background: #f5f5f5;
 }
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
-	background: url(../img/header.jpg);
-	background-size: 100%; 
+	padding: 50px;
 }
-/*================Загальні стилі======================*/
-.container {
-	box-shadow: 0 0 25px 2px inset;
-	max-width: 1200px;
-	margin: 20px auto;
-	border-radius: 10px;
-}
-.content {
-	margin: 0px 0px 20px 0px;
-	padding: 20px
-}
-.background__container {
-	margin-bottom: 30px;
-}
-.background__title h2 {
-	display: inline-block;
-}
-.background__title  {
-	vertical-align: middle;
-	padding: 10px;
-	background-color: rgb(116, 180, 78);
-	text-transform: capitalize;
-	text-align: center;
-	font-size: 25px;
-	font-weight: 700;
-	margin: 0px 0px 20px 0px;
-}
-.line_left, .line_right {
-	display: inline-block;
-	width: 2px;
-	height: 30px;
-	background: rgb(255, 255, 255);
-	vertical-align: middle;
-	transform: translateY(-10%);
-}
-.background__block{
-	margin-bottom: 15px;
-	border: 2px solid rgb(255, 255, 255);
-	padding: 20px;
-}
-.background__block:hover{
-	box-shadow: inset 0px 0px 20px 2px #ffffff;
-	border: 2px solid rgb(0, 0, 0);
-}
-p {
-	text-transform: capitalize;
-	margin: 10px;
-	line-height: 20px;
-}
-span {
-	color: rgb(0, 0, 0);
-	font-size: 25px;
-}
-h3 {
-	font-size: 25px;
-	text-align: center;
-	background: rgba(255, 255, 255, 0.767);
-	padding: 10px;
-	border-radius: 10% / 50% ; 
-}
-h3 span {
+/* ------------------------------ */
+.block {
 	font-size: 30px;
-	font-style: normal;
-	color: midnightblue;
-	text-transform: capitalize;
-}
-main{
-	margin-bottom: 40px;
-}
-/*==========--========header========================*/
-.header {
-	background: url(../img/pexels-adrien-olichon-2387793.jpg);
-	background-size: cover;
-}
-.header__title {
-	padding: 10px 0px 0px 0px;
-	text-decoration: underline rgba(0, 0, 0, 0.3);
-	text-align: center;
-	font-size: 35px;
-	font-weight: 700;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	color:#363748;
-}
-.block__list{
-	margin: 0 40px;
-}
-.nav__list, li {
-	display: inline-block;
-	padding: 10px ;
-}
-.nav__link {
-	font-family: Be+Vietnam+Pro;
-	font-size: 20px;
-	color: #eee4ee;
-	font-weight: 500;
-	letter-spacing: 1px;
-	margin-right: 10px;		margin: 0 auto;
-	text-transform: capitalize;
-	text-shadow: 2px -2px 2px rgba(0, 0, 0, 0.493);
-}
-.line {
-	display: inline-block;
-	height: 25px;
-	width: 1px;
-	background: rgb(255, 255, 255);
-	vertical-align: middle;
-	margin-right: 10px;
-}
-.nav__link:hover{
-	text-decoration: underline ;
-	color: rgb(136, 164, 216);
-	text-shadow: 2px -2px 2px #000);
-}
-/*====================MAIN=========================== */
+	/* padding: 30px; */
 
-/* ==============BACKGROUND--COLOR=================== */
-.column-one {
-	background-color: transparent;
-}
-.column-two {
-	background-color: #18b5a4;
-}
-.column-three {
-	background-color: rgb(24,181,164);
-}
-.column-four {
-	background-color: rgba(24,181,164,0.5);
-}
-/* ======================BACKGROUND--IMAGE========= */
-.column-image-zero{
-	background: #ffd8d8 url(../img/play.png);
-}
-.column-image-one{
-	background: #18b5a4 url(../img/sound\(2\).png);
-}
-.column-image-two{
-	background: linear-gradient(135deg, rgba(228,245,252,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 50%,rgba(42,176,237,1) 100%);
-}
-.column-image-three{
+	/* Определяет цвет фона элемента */
+	/* background-color: green;
 
-	background: linear-gradient(to top, rgba(41,64,170,1) 15%,rgba(59,199,249,1) 39%,rgba(128,237,171,1) 56%,rgba(125,185,232,1) 73%,rgba(132,123,229,1) 91%);
-}
-.column-image-four{
-	background: radial-gradient(ellipse at center, rgba(132,123,229,1) 9%,rgba(125,185,232,1) 27%,rgba(128,237,171,1) 44%,rgba(59,199,249,1) 61%,rgba(41,64,170,1) 85%)
-}
-/* ====================BACKGROUND--REPAIT======= === */
-.column-repead-zero {
-	background: #6495ed url(../img/sound\(2\).png) ;
-}
-.column-repead-one {
-	background: #6495ed url(../img/sound\(2\).png) no-repeat;
-}
-.column-repead-two {
-	background: #6495ed url(../img/sound\(2\).png) repeat-x;
-}
-.column-repead-three {
-	background: #6495ed url(../img/sound\(2\).png) repeat-y;
+	/* Устанавливает фоновое изображение 
+	для элемента либо задает градиентную заливку */
+	/* background-image: url("../img/01.png"); */
+	/* background-image: linear-gradient(to bottom, rgba(236, 232, 157, 1) 0%, rgba(94, 83, 115, 1) 50%, rgba(24, 181, 164, 1) 100%); */
 
-}
-.column-repead-four {
-	background: #6495ed url(../img/sound\(2\).png) space;
-}
-.column-repead-five{
-	background: #6495ed url(../img/sound\(2\).png) round;
+	/* Определяет, как будет повторяться фоновое изображение */
+	/* background-repeat: no-repeat; */
 
+	/* Задает начальное положение фонового изображения, где первое значение 
+	(проценты, px, слово) определяет расположение 
+	по горизонтали, второе - вертикали. */
+	/* background-position: 0 0; */
+
+	/* Масштабирует фоновое изображение согласно заданным размерам. 
+	В цифрах, где первое значение (проценты, px) определяет ширину, 
+	второе - высоту. Либо специальным значением. */
+	/* background-size: auto auto; */
+
+	/* Устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента. */
+	/* background-attachment: scroll; */
+
+	/* Универсальное свойство */
+	/* background: green url("../img/01.png") 50% / cover no-repeat fixed; */
+
+	/* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%), url("../img/image_1.jpg") 0 0 / 100px no-repeat, green url("../img/01.png") 50% / cover no-repeat; */
 }
 
-/* ================Background-position============== */
-.column-position-zero {
-	background: #56ddc0 url(../img/freelance1.png) 0 0 no-repeat;
+ul {
+	margin: 20px 0px;
 }
-.column-position-one {
-	background: #56ddc0 url(../img/freelance1.png) 0 50% no-repeat;
-	/* background-position: 0 50%;
-	background-repeat: no-repeat; */
-}
-.column-position-two {
-	background: #56ddc0 url(../img/freelance1.png) 50% no-repeat;
-}
-.column-position-three {
-	background: #56ddc0 url(../img/freelance1.png) 100% 100% no-repeat;
-	/* background: url(../img/freelance1.png) bottom right no-repeat; */
-}
-.column-position-four {
-	background: #56ddc0 url("../img/freelance1.png") 190px 50px no-repeat ; 
-}
-.column-position-five {
-	background: url(../img/freelance1.png) 50% / 300px no-repeat, 
-	url(../img/Neon\ Smileys\ Poster\ Print🦋.jpg) 0 0 / 15% no-repeat, 
-	url(../img/Neon\ Smileys\ Poster\ Print🦋.jpg) 100% 0 / 10% no-repeat,  
-	url(../img/Neon\ Smileys\ Poster\ Print🦋.jpg) 0% 100% / 15% no-repeat, 
-	url(../img/Neon\ Smileys\ Poster\ Print🦋.jpg) 100% 100% / 10% no-repeat, 
-	url(../img/Neon\ Smileys\ Poster\ Print🦋.jpg) 75% 25% / 100px no-repeat,  
-	url(../img/Neon\ Smileys\ Poster\ Print🦋.jpg) 25% 75% / 100px no-repeat,  
-	cornflowerblue url(../img/Customize.jpg) 0 0 repeat;
-	color: transparent;	
-} 
-
-/* ==BACKGROUND-ATACHMENT=========================== */
-.column-attachment-zero {
-	background: url(../img/Neon\ Smileys\ Poster\ Print🦋.jpg) 0 0 / 100% no-repeat scroll; 
-	color: f#ffffff;
-}
-.column-attachment-one {
-	background: url(../img/pexels-faik-akmd-1025469.jpg) 0 0 / 100% repeat fixed; 
-}
-.column-attachment-two {
-	background: url(../img/pexels-faik-akmd-1025469.jpg) 0 0 / 100% repeat fixed; 
-}
-.column-attachment-three{
-	background: url(../img/pexels.jpg) 0 0 / 100% 50% no-repeat local,
-	url(../img/freelance1.png) 50% 95% no-repeat;
-	overflow: auto;
-	max-height: 600px;
-}
-/* ==BACKGROUND-SIZE=========================== */
-.column-size-zero {
-	background: url(../img/011.png) 0 0 / auto auto no-repeat; 
-}
-.column-size-one {
-	background: url(../img/011.png) 0 0 / 100% auto no-repeat; 
-}
-.column-size-two {
-	background: url(../img/011.png) 0 0 / auto 100% no-repeat; 
-}
-.column-size-three {
-	background: url(../img/011.png) 0 0 / 100% 100% no-repeat; 
-}
-.column-size-four {
-	background: url(../img/011.png) 0 0 / contain no-repeat; 
-}
-.column-size-five {
-	background: url(../img/011.png) 0 0 / cover no-repeat; 
-}
-.column-size-six {
-	background: url(../img/011.png) 0 0 / 400px 300px no-repeat; 
-}
-
-.task {
-	background: url(../img/BG\ Image.jpg) 90% 0 / cover no-repeat; 
-	width: 100%;
-	margin-bottom: 20px;
-}
-.image__back{
-	padding: 288px 0px 304px 210px;
-}
-.image__back-title{
-	margin-bottom: 48px;
-	font-size: 56px;
-	line-height: 56px;
-	font-weight: 900;
-	max-width: 583px;
-	color: #ffffff;
-	font-family: "roboto";
-	margin: 0px 0px 48px 0px;
-}
-.link-link {
-	display: inline-block;
-	font-family: "Roboto";
+ul li {
+	margin: 0px 0px 15px 0px;
 	font-size: 12px;
-	font-weight: 700;
-	line-height: 24px;
-	letter-spacing: 0.15px;
-	color: #ffffff;
-	background: #C40B0B url(../img/Button\ Treatment\ 48px.png) 100% 50% no-repeat;
-	padding: 10px 0px 10px 17px;
-	text-transform: uppercase;
-	min-width: 211px;
+	min-height: 30px;
+	background: url("../img/icon.png") 0 0 / 30px no-repeat;
+	padding: 7px 0px 0px 30px;
 }
-/*              section-one                */
 
-.section-one {
-	background: #02133C url(../img/overlay\ image.png) 0 0 no-repeat;
-	padding: 100px;
-	margin-bottom: 50px;
+/* ------------------------------ */
+
+.whoweare {
+	padding: 0px 0px 170px 0px;
 }
-.our-impact {
+.whoweare__container {
+	max-width: 1020px;
+	margin: 0px auto;
+	border: 1px solid transparent;
+	padding: 100px 87px 0px 87px;
+	background: #fff url("../img/bg.png") 100% 0 no-repeat;
 }
-.block-impact{
-	display: inline-block;
-	max-width: 411px;
-	margin-right: 94px;
-	margin-bottom: 80px;
+.whoweare__content {
 }
-.subtitle {
-	background: url(../img/Overline\ Mark.png) 0 100% no-repeat;
-	vertical-align: middle;
-	padding: 1px 30px;
-	font-family: Roboto;
+.whoweare__subtitle {
+	font-weight: bold;
 	font-size: 12px;
-	font-weight: 700;
-	line-height: 24px;
+	line-height: 27px;
 	letter-spacing: 2.5px;
-	color: #ffffff;
-	margin-bottom: 32px;
-}
-.title_our-impact {
-	font-family: Roboto;
-	font-size: 36px;
-	font-weight: 900;
-	line-height: 42px;
-	letter-spacing: 0px;
-	color: #ffffff;
-}
-.our-image {
-	display: inline-block;
-}
-div img {
-	/* margin-top: -290px; */
-}
-/*                            */
-.our-colums {
-	display: inline-block;
-	max-width: 227px;
-	vertical-align: top;
-	margin-right: 37px;
-	padding: 5px 0px 5px 90px;
-}
-.title-colums {
-	display: inline-block;
-	margin-bottom: 3px;
-	font-family: Roboto;
-	font-size: 36px;
-	font-weight: 900;
-	line-height: 42px;
-	letter-spacing: 0px;
-	color:#C40B0B
-}
-.subtitle_colums {
-	font-family: Roboto;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	letter-spacing: 0.15000000596046448px;
-	color: #F5F5F5;
-}
-/*                                */
-.colums-one {
-	background: url(../img/car_oil.png) 0 0 no-repeat ;
-}
-.colums-two {
-	background: url(../img/car_transmission.png) 0 0 no-repeat ;
-}
-.colums-three {
-	background: url(../img/car_alignment.png) 0 0 no-repeat; 
-}
-.colums-four {
-	background: url(../img/car_engine_2_24x.png) 0 0 no-repeat; 
-	
-}
-/*                        end   section-one                                    */
-
-/*                         section-two                                       */
-.section-contact {
-	display: inline-block;
-	margin: 0px 0px 20px 180px;
-}
-.list-block {
-	display: inline-block;
-	background-color: #fff;
-	border: 1px solid #000;
-	border-radius: 10px;
-	padding: 30px;
-	max-width: 337px;
-}
-.title-contact{
 	text-transform: uppercase;
-	font-family: Roboto;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 22px;
-	letter-spacing: 0.15px;
-	color: #4B4B4B;
 	margin: 0px 0px 28px 0px;
+	background: url("../img/icon.png") 0 0 no-repeat;
+	padding: 0px 0px 0px 30px;
 }
-.text {
-	display: block;
-	color: #4B4B4B;
-	font-family: Roboto;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 20px;
+.whoweare__title {
+	color: #02133c;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	max-width: 583px;
+	margin: 0px 0px 33px 0px;
+}
+.whoweare__text {
+	font-size: 16px;
+	line-height: 24px;
 	letter-spacing: 0.15px;
-	padding: 0px 0px 16px 32px;
+	margin: 0px 0px 52px 0px;
 }
-.text-location {
-	background: url(../img/local.png) 0 0 no-repeat; 
+.whoweare__image {
+	margin: 0px 0px -120px 0px;
 }
-.text-phone {
-	background: url(../img/smartphone.png) 0 0 no-repeat; 
+.whoweare__image img {
+	max-width: 100%;
 }
-.text-mail {
-	background: url(../img/email.png) 0 0 no-repeat; 
-}
-.text-clock {
-	background: url(../img/timer_24px.png) 0 0 no-repeat;
-	padding: 0px 0px 0px 33px;
-}
-/*                                                                   */
-.__right {
-	text-align: right;
-	padding: 0px 32px 16px 0px;
-}
-.text-location__right {
-	background: url(../img/local.png) 100% 0 no-repeat; 
-}
-.text-phone__right {
-	background: url(../img/smartphone.png) 100% 0 no-repeat; 
-}
-.text--mail__right {
-	background: url(../img/email.png) 100% 0 no-repeat; 
-}
-.text-clock__right {
-	background: url(../img/timer_24px.png) 100% 0 no-repeat; 
-	padding: 0px 32px 0px 0px;
-}
-.list a:hover {
-	text-decoration: underline;
-}
-/* ==========Установка нескольких фоновых изображений для блока==== */
-.position {
-	width: 600px;
-	height: 400px;
-	margin: 0 auto;
-	background-color: #fff;
-	background: 
-	url(../img/email.png) 0 0 repeat-y, 
-	url(../img/email.png) 100% 0 repeat-y, 
-	url(../img/email.png) 0 100% repeat-x, 
-	url(../img/email.png) 100% 0 repeat-x, 
-	url(../img/email.png) 0 / 8px repeat-x fixed, 
-	url(../img/pexels-miguel-á-padriñán-255379.jpg) 0 0 / cover no-repeat; 
-}
-.position-block p{
-	margin: 20px 10px 20px 10px;
-	padding: 0px 50px 0px 0px;
-	background: #6495ed url(../img/check.png) 55px 50% / 15px no-repeat;
-	display: inline-block;
-}
-.position-block  {
-	display: inline-block;
-	padding: 0px 0px 0px 20px;
-}
-/*                            */
-.position__blosk-two {
-	background-color: #252525;
-	max-width: 255px;
-	margin: 0 auto;
+
+/*---------------------------*/
+
+.someblock {
+	padding: 15px;
+	color: #fff;
+	max-width: 350px;
+	background: #252525;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 	border-radius: 6px;
+	font-size: 0;
 }
-.position__block-title {
-	color: #ffffff;
-	font-family: "Helvetica Neue";
-	font-size: 22px;
-	font-weight: 400;
-	line-height: 26px;
-	letter-spacing: -0.2750000059604645px;
-	padding: 24px;
-	width: 207px;
-}
-.position-line {
-	width: 56px;
-	height: 2px;
-	background-color: #34C759;
-	margin: 0 24px;
-}
-.position__text {
-	color: rgb(255, 255, 255, 0.5);
-	font-size: 13px;
-	font-weight: 400;
-	line-height: 18px;
-	letter-spacing: -0.16249999403953552px;
-	width: 207px;
-	padding: 24px 0px 42px 24px;
-}
-.position__blosk-two:hover { 
-	background-color: #34C759;
-}
-.position__blosk-two:hover div {
-	color: #000000;
-}
-.position__blosk-two:hover .position-line {
-	background: #000000;
-}
-/* ==================FOOTER======================== */
-footer {
-	background-color: #02133C;
-	color: #959595;
-	height: 60px;
-	font-family: Roboto;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 18px;
-	letter-spacing: 0.15px;
-}
-footer div{
+.someblock__rating {
+	vertical-align: middle;
 	display: inline-block;
-	margin: 25px 0px 0px 200px;
+	width: 60%;
 }
-footer p{
-	padding: 0;
-	margin: 0;
+.rating {
+}
+.rating__stars {
+	display: inline-block;
+	vertical-align: middle;
+}
+.rating__value {
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.someblock__action {
+	vertical-align: middle;
+	width: 40%;
+	text-align: right;
+	display: inline-block;
+}
+.someblock__button {
+	font-size: 14px;
+	background: #262626;
+	border: 2px solid #303030;
+	border-radius: 30px;
+	padding: 11px 32px;
+	text-transform: uppercase;
+	display: inline-block;
+	color: rgba(255, 255, 255, 0.5);
 }
