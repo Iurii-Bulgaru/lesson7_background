@@ -400,21 +400,6 @@ main{
 	max-width: 1020px;
 	margin: 0 auto;
 }
-.item__imagecar{
-	/* background: url(../img/CarRepair/Image.jpg) 100% 0 / 100% no-repeat;  */
-}
-.item__oil{
-	/* background: url(../img/CarRepair/01.png) 0 0 no-repeat;  */
-}
-.item__transmision{
-
-}
-.item__alignment{
-
-}
-юitem__engine{
-
-}
 /*                                        */
 .impact-our__list {
 	font-size: 0;
