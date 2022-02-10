@@ -366,8 +366,6 @@ main{
 	max-width: 1020px;
 	margin: 0 auto;
 }
-.our-impact__image_wids {
-}
 .our__impact-text{
 	display: inline-block;
 }
@@ -396,12 +394,26 @@ main{
 }
 .our-impact__image img {
 	margin: -300px 0px 0px 107px;
-	
 }
 .impact-our__contain {
 	font-family: "Roboto";
 	max-width: 1020px;
 	margin: 0 auto;
+}
+.item__imagecar{
+	/* background: url(../img/CarRepair/Image.jpg) 100% 0 / 100% no-repeat;  */
+}
+.item__oil{
+	/* background: url(../img/CarRepair/01.png) 0 0 no-repeat;  */
+}
+.item__transmision{
+
+}
+.item__alignment{
+
+}
+юitem__engine{
+
 }
 /*                                        */
 .impact-our__list {
